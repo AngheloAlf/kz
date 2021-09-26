@@ -650,12 +650,8 @@ static void init(void) {
     menu_submenu_add(&kz.main_menu, 0, Y + 1, "inventory", create_inventory_menu());
     menu_submenu_add(&kz.main_menu, 0, Y + 2, "equips", create_equips_menu());
     menu_submenu_add(&kz.main_menu, 0, Y + 3, "file", create_file_menu());
-#ifndef LITE
     menu_submenu_add(&kz.main_menu, 0, Y + 4, "debug", create_debug_menu());
     menu_submenu_add(&kz.main_menu, 0, Y + 5, "settings", create_settings_menu());
-#else
-    menu_submenu_add(&kz.main_menu, 0, Y + 4, "settings", create_settings_menu());
-#endif
 #undef Y
 
     menu_init(&kz.pause_menu, 0, 0);

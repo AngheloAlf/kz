@@ -130,8 +130,8 @@ menu_t *create_equips_menu      (void);
 menu_t *create_settings_menu    (void);
 #ifndef LITE
 menu_t *create_states_menu      (void);
-menu_t *create_debug_menu       (void);
 #endif
+menu_t *create_debug_menu       (void);
 void    kz_log                  (const char *format, ...);
 
 extern kz_ctxt_t    kz;

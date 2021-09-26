@@ -1,4 +1,3 @@
-#ifndef LITE
 #include <stdint.h>
 #include <inttypes.h>
 #include <stdlib.h>
@@ -857,4 +856,3 @@ menu_t *create_debug_menu(void) {
 
     return &debug;
 }
-#endif
