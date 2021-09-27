@@ -15,7 +15,7 @@ void load_default_settings(void){
     settings->binds[KZ_CMD_TOGGLE_MENU] = make_bind(2, BUTTON_R, BUTTON_L);
     settings->binds[KZ_CMD_RETURN] = make_bind(2, BUTTON_R, BUTTON_D_LEFT);
     settings->binds[KZ_CMD_LEVITATE] = make_bind(1, BUTTON_L);
-    settings->binds[KZ_CMD_TURBO] = BIND_END;
+    settings->binds[KZ_CMD_TURBO] = make_bind(1, BUTTON_D_RIGHT);
     settings->binds[KZ_CMD_FALL] = BIND_END;
     settings->binds[KZ_CMD_RELOAD] = BIND_END;
     settings->binds[KZ_CMD_VOID] = BIND_END;

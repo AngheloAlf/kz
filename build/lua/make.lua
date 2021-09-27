@@ -3,7 +3,8 @@ require("build/lua/rom_info")
 local arg = { ... }
 
 local rom = gru.n64rom_load(arg[1])
-local rom_info = roms[rom:crc32()]
+-- local rom_info = roms[rom:crc32()]
+local rom_info = roms[0xB428D8A7]
 
 -- We don't have an identiable rom here, stop patching
 if rom_info == nil then
